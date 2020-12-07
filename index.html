@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Provincies</title>
+    <link rel="icon" href="data:,"> 
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<style>
+    table {
+        font-family: 'Futura PT';
+        color: #707070;
+    }
+</style>
+
+<body>
+
+    <table border="0" class="tabelslider">
+        <tr>
+            <td colspan="3">
+                <div class="slidecontainer" "slidertable">
+                    <input type="range" min="2013" max="2019" value="2019" step=3 class="slidervalue" id="slider">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="sliderminvalue" class="slidertable" align="left">2013</td>
+            <td id="slidercurvalue" class="slidertable" align="center">2016</td>
+            <td id="slidermaxvalue" class="slidertable" align="right">2019</td>
+        </tr>
+    </table>
+
+    <!--    <p class="selected-slidervalue"></p>-->
+
+    <div id='buttons'></div>
+
+    <div id="div_placeholder"></div>
+
+    <script type="text/javascript" src="provincies.js"></script>
+</body>
+
+</html>
+
+
+<!--https://opendata.cbs.nl/#/CBS/nl/dataset/70072ned/table?ts=1604253727890 -->
